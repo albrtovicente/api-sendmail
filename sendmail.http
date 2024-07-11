@@ -1,0 +1,32 @@
+### Prueba de correo exitoso
+POST http://localhost/api/v1/endpoint-webservice/index.php
+Content-Type: "application/json"
+
+{
+    "name": "alberto",
+    "email":"alberto@gmail.com",
+    "message":"mldkvnsvskv"
+}
+### EXITOSO
+### Prueba de correo con un dato faltante
+POST http://localhost/api/v1/endpoint-webservice/index.php
+Content-Type: "application/json"
+
+{
+    "name": "alberto",
+    "email":"",
+    "message":"mldkvnsvskv"
+}
+### EXITOSO
+### Prueba de correo con todos los datos faltantes
+POST http://localhost/api/v1/endpoint-webservice/index.php
+Content-Type: "application/json"
+
+{
+    "name": "",
+    "email":"",
+    "message":""
+}
+### EXITOSO
+
+
